@@ -1,1 +1,24 @@
+#! usr/bin/env node
 
+var pkg = require("../package.json");
+var readline = require('readline');
+var wrapper = require("../src/wrapper.js");
+
+var command = process.argv.slice(2);
+
+const cwd = process.cwd();
+
+const rl = realine.createInterface ({
+  input: process.sdtin,
+  output: process.stdout
+});
+
+wrapper.defineRL(rl);
+
+const start = () => {
+  console.log("Windows Stress Test") + space(1);
+}
+
+const help = () => {
+  console.log("Usage: stress_test <command> [parameter]");
+}
