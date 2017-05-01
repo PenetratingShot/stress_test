@@ -22,3 +22,10 @@ const start = () => {
 const help = () => {
   console.log("Usage: stress_test <command> [parameter]");
 }
+
+// Actual testing
+const test = () => {
+  while (1 < 2) {
+    console.log("THIS IS A TEST!!!!!!");
+  }
+}
